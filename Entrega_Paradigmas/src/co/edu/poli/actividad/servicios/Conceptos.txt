@@ -1,0 +1,53 @@
+CONCEPTOS POO – Proyecto Actividad 3
+
+1. Método constructor:
+   - Explicación: Es un método especial que inicializa los objetos de una clase.
+   - Ubicación: Clase Conmemorativa, línea 40 (public Conmemorativa(...)).
+
+2. Métodos de acceso (getters y setters):
+   - Explicación: Permiten leer o modificar atributos privados de una clase.
+   - Ubicación: Clase Conmemorativa, líneas 22-35 (getEvento, setEvento, getAnnyo_emision, setAnnyo_emision).
+
+3. Método toString():
+   - Explicación: Sobreescribe el método por defecto de Object para mostrar información legible del objeto.
+   - Ubicación: Clase Conmemorativa, línea 6 (public String toString()).
+
+4. Modificador static:
+   - Explicación: Indica que el atributo o método pertenece a la clase y no a las instancias.
+   - Ubicación: Clase Certificacion, línea 10 (private static int cantidadCertificaciones).
+
+5. Modificador final:
+   - Explicación: Hace que un atributo no pueda cambiar, un método no se pueda sobrescribir o una clase no se pueda heredar.
+   - Ubicación: Clase Moneda, línea 12 (private final String id).
+
+6. Visibilidades:
+   - Explicación: Controlan el acceso a los atributos y métodos (public, private, protected).
+   - Ubicación: Clase Moneda, varias líneas (ej: private double peso, public String getId()).
+
+7. Multiplicidades:
+   - Explicación: Relación entre clases, indicando cuántos objetos de una clase pueden estar relacionados con otra.
+   - Ubicación: Clase Moneda tiene un atributo Pais (1 moneda pertenece a 1 país), línea 15.
+
+8. Sobreescritura de métodos:
+   - Explicación: Una subclase redefine un método de la superclase.
+   - Ubicación: Clase Conmemorativa, línea 6 (public String toString()).
+
+9. Sobrecarga de métodos:
+   - Explicación: Una clase puede tener varios métodos con el mismo nombre pero distinta firma.
+   - Ubicación: Clase Principal, línea 50 (ejemplo con métodos mostrarInfo(String) y mostrarInfo()).
+
+10. Creación de objetos:
+    - Explicación: Proceso de instanciar una clase con new.
+    - Ubicación: Clase Principal, línea 20 (Moneda m1 = new Conmemorativa(...)).
+
+11. Agregaciones:
+    - Explicación: Una clase contiene objetos de otra clase, pero ambos pueden existir de forma independiente.
+    - Ubicación: Clase Moneda tiene atributo Coleccion, línea 17.
+
+12. Herencia:
+    - Explicación: Una clase hereda atributos y métodos de otra.
+    - Ubicación: Clase Conmemorativa extiende Moneda, línea 3.
+
+13. Polimorfismo:
+    - Explicación: Una referencia de tipo superclase puede apuntar a objetos de las subclases.
+    - Ubicación: Clase Principal, línea 20 (Moneda m1 = new Conmemorativa(...)).
